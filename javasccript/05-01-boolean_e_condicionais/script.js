@@ -74,3 +74,6 @@ if (!!""); //false
 10 != 15; //true
 10 != "10"; //false
 10 !== "10"; //true
+
+var x = 10;
+console.log(x === 10);
