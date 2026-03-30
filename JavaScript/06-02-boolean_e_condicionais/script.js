@@ -47,10 +47,12 @@ switch (corFavorita) {
   case "Azul":
     console.log("Olhe para o céu.");
     break;
-  case "vermelho":
-    console.log("Olhe par as rosas.");
-    break;
   case "Amarelo":
-    console.log("Olhe para o sol.");
+    console.log("Olhe para o Sol.");
     break;
+  case "verde":
+    console.log("Olhe para a Floresta.");
+    break;
+  default:
+    console.log("Feche os Olhos.");
 }
