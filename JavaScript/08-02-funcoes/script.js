@@ -14,8 +14,8 @@ console.log(imc(80, 1.8)); //retorna oimc e undefined
 // uma função pode retornar qualquer tipo de dado e até outras funções.
 
 function terceiraIdade(idade) {
-  if (typeof idade !== "number") {
-    return "Informe a sua idade!";
+  if (typeof idade !== 'number') {
+    return 'Informe a sua idade!';
   } else if (idade >= 60) {
     return true;
   } else {
@@ -39,12 +39,20 @@ console.log(precisoVisitar(10));
 
 // Funções conseguem acessar variáveis que foram criadas no contexto pai
 
-var profissao = "Designer";
-
+var profissao = 'Designer';
 function dados() {
-  var nome = "Amdré";
+  var nome = 'André';
   var idade = 28;
   function outrosDados() {
-    var endereco = "Rio de Janeiro";
+    var endereco = 'Rio de Janeiro';
+    var idade = 29;
+    return `${nome}, ${idade}, ${endereco}, ${profissao}`;
   }
+  return outrosDados();
 }
+
+console.log(dados()); // retorna ' André, 29, Rio de Janeiro, Designer'
+outrosDados(); // retorna um erro
+
+// Hoisting;
+// Antes de executar uma função, o JS 'move' todas as funções declaradas apra a memoria
