@@ -15,14 +15,14 @@ console.log(perimetroQuadrado(12));
 function nomeCompleto(nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
-console.log(nomeCompleto('Robson', ' Aguiar'));
+console.log(nomeCompleto("Robson", " Aguiar"));
 
 // Crie uma função que verifica se um número é par
 function numeroPar(numero) {
   if (numero % 2 === 0) {
-    return 'É par';
+    return "É par";
   } else {
-    return 'é impar';
+    return "é impar";
   }
 }
 console.log(numeroPar(12));
@@ -31,15 +31,15 @@ console.log(numeroPar(12));
 function tipodeDado(n) {
   return typeof n;
 }
-var tipo = tipodeDado('10');
+var tipo = tipodeDado("10");
 console.log(tipo);
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
-addEventListener('scroll', function () {
-  console.log('Robson Aguiar');
+addEventListener("scroll", function () {
+  console.log("Robson Aguiar");
 });
 
 // Corrija o erro abaixo
@@ -52,3 +52,5 @@ function jaVisitei(paisesVisitados) {
 }
 console.log(precisoVisitar(20));
 console.log(jaVisitei(20));
+
+teste;
